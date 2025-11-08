@@ -5,7 +5,7 @@ namespace MicroservicesShop.ProductApi.Extensions;
 
 public static class ProductExtensions
 {
-    public static Product MaPToProduct(this ProductDTO dto)
+    public static Product MapToProduct(this ProductDTO dto)
     {
         return new Product
         {
