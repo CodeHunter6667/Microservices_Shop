@@ -6,7 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddConfigurations();
 builder.AddDbContexts();
 builder.AddServices();
-builder.Services.AddControllers();
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
