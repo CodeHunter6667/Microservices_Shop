@@ -7,7 +7,7 @@ public static class BuilderExtensions
 {
     public static void AddConfigurations(this WebApplicationBuilder builder)
     {
-        Configuration.ConnectionString = builder.Configuration.GetConnectionString("ProductDbConnection") ?? string.Empty;
+        Configuration.ConnectionString = builder.Configuration.GetConnectionString("SqlConnection") ?? string.Empty;
     }
 
     public static void AddDbContexts(this WebApplicationBuilder builder)
