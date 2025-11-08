@@ -1,4 +1,6 @@
-﻿namespace MicroservicesShop.ProductApi.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace MicroservicesShop.ProductApi.Models;
 
 public class Product
 {
@@ -8,6 +10,7 @@ public class Product
     public string Description { get; set; } = string.Empty;
     public long Stock { get; set; }
     public string ImageUrl { get; set; } = string.Empty;
+    [JsonIgnore]
     public Category Category { get; set; } = new();
     public int CategoryId { get; set; }
 }
